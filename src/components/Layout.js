@@ -1,5 +1,6 @@
 import React from 'react';
 import { staticFolder } from '../utils/url-lib';
+import PortfolioItem from './PortfolioItem';
 
 
 const Layout = () => {
@@ -57,7 +58,19 @@ const Layout = () => {
 
 
           <section className="portfolio">
-            section portfolio
+            <h1>Portfolio</h1>
+            <div className="container">
+
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+              <PortfolioItem />
+
+            </div>
           </section>
 
 
