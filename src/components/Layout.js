@@ -80,13 +80,26 @@ const Layout = () => {
               <SliderItem />
 
             </div>
-            <img src={staticFolder() + "/img/arrow.png"} class="arrow left" alt="" />
-            <img src={staticFolder() + "/img/arrow.png"} class="arrow right" alt="" />
+            <img src={staticFolder() + "/img/arrow.png"} className="arrow left" alt="" />
+            <img src={staticFolder() + "/img/arrow.png"} className="arrow right" alt="" />
           </section>
 
 
-          <section className="contact">
-            section contact
+          <section className="contact" id="contact">
+            <div className="left">
+              <img src={staticFolder() + "/img/shake-hands.svg"} alt="hand shake" />
+            </div>
+            <div className="right">
+              <h2>Contact</h2>
+              <form id="myForm"><label>
+                <input name="email" type="email" id="email" placeholder="Your email..." required="" />
+              </label>
+                <label>
+                  <textarea name="comment" id="comment" placeholder="Write something..." required="" />
+                </label>
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </section>
 
 
