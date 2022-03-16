@@ -1,4 +1,5 @@
 import React from 'react';
+import { staticFolder } from '../utils/url-lib';
 
 
 const Layout = () => {
@@ -21,8 +22,57 @@ const Layout = () => {
 
       {/* ispod topbara je mnu koji se pojavljuje kad se klikne na hamburger ali to cemo drugom prilikom */}
 
-    
+      <div className="layout-body">
+        <div className="sections">
 
+          <section className="intro" id="intro">
+            <div className="imgContainer"></div>
+            <div className="wrapper">
+              <h2>Hi There, I'm</h2>
+              <h1>Julia Berezina</h1>
+              <h3><span>Front E</span><span className="ityped-cursor">|</span></h3>
+              <div className="social">
+                <a href="https://www.linkedin.com/in/julia-berezina/" target="_blank" rel="noreferrer">
+                  <img className="icone" src={staticFolder() + "/img/linkedin.png"} alt="" />
+                </a>
+                <a href="https://github.com/Berezka-creator" target="_blank" rel="noreferrer">
+                  <img className="icone" src={staticFolder() + "/img/github.png"} alt="" />
+                </a>
+                <a href="https://www.facebook.com/yulia.berezina.16" target="_blank" rel="noreferrer">
+                  <img className="icone" src={staticFolder() + "/img/facebook.png"} alt="" />
+                </a>
+                <a href="https://www.instagram.com/julia_b_samara/" target="_blank" rel="noreferrer">
+                  <img className="icone inst" src={staticFolder() + "/img/instagram.png"} alt="" />
+                </a>
+              </div>
+              <div className="buttons">
+                <a href="/#portfolio">Portfolio</a>
+                <a href="/resume">Resume</a>
+              </div>
+            </div>
+            <a href="#portfolio" id="arrow">
+              <img src={staticFolder() + "/img/arrow.png"} alt="" />
+            </a>
+          </section>
+
+
+          <section className="portfolio">
+            section portfolio
+          </section>
+
+
+          <section className="slider-container">
+            section slider-container
+          </section>
+
+
+          <section className="contact">
+            section contact
+          </section>
+
+
+        </div>
+      </div>
 
 
     </div>
