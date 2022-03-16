@@ -1,6 +1,7 @@
 import React from 'react';
 import { staticFolder } from '../utils/url-lib';
 import PortfolioItem from './PortfolioItem';
+import SliderItem from './SliderItem';
 
 
 const Layout = () => {
@@ -68,14 +69,19 @@ const Layout = () => {
               <PortfolioItem />
               <PortfolioItem />
               <PortfolioItem />
-              <PortfolioItem />
 
             </div>
           </section>
 
 
           <section className="slider-container">
-            section slider-container
+            <div className="slider">
+
+              <SliderItem />
+
+            </div>
+            <img src={staticFolder() + "/img/arrow.png"} class="arrow left" alt="" />
+            <img src={staticFolder() + "/img/arrow.png"} class="arrow right" alt="" />
           </section>
 
 
