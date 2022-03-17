@@ -637,6 +637,9 @@ h3 {
   cursor: pointer;
 }
 
-
+.boki-logo {
+  z-index: 999;
+  height: 70px;
+}
 
 

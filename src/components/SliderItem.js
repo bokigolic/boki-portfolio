@@ -12,8 +12,8 @@ const SliderItem = (props) => {
                 <img src={staticFolder() + "/img/primer1.png"} alt=""/>
                 </div>
                 <div className="project-buttons">
-                  <a target="_blank" href="https://github.com/Berezka-creator/academind_css_project" rel="noreferrer">GitHub</a>
-                  <a target="_blank" href="https://berezka-creator.github.io/academind_css_project/" rel="noreferrer">Live View</a>
+                  <a target="_blank" href="https://github.com/bokigolic" rel="noreferrer">GitHub</a>
+                  <a target="_blank" href="https://github.com/bokigolic/boki-portfolio" rel="noreferrer">Live View</a>
                 </div>
                 </div>
                 <div className="right">
