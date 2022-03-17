@@ -1,15 +1,19 @@
 
 
 const initialState = {
-  reoute: 'HOME',
+  route: 'HOME',
   nesto: 'bla bla'
 };
 
 const rootReducer = (state=initialState, action)=> {
   switch (action.type) {
-    case 'NEKI_ACTION':
-      return state;
-  
+    
+    case 'ROUTE_SET':
+      return {
+        ...state,
+        route: action.payload
+      };
+
     default:
       return state;
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { staticFolder } from '../utils/url-lib';
-import PageHome from './PageHome';
+import PageRouter from './PageRouter';
 import PortfolioItem from './PortfolioItem';
 import SliderItem from './SliderItem';
 
@@ -27,7 +27,7 @@ const Layout = () => {
 
       <div className="layout-body">
 
-        <PageHome />
+        <PageRouter />
 
       </div>
 
