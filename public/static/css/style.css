@@ -55,16 +55,6 @@ a {
   text-decoration: none;
 }
 
-h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
 .topbar .wrapper .left .logo {
   font-size: 40px;
   font-weight: 700;
@@ -435,11 +425,6 @@ h3 {
   }
 }
 
-.project,
-.project .project-container {
-  height: 100%;
-}
-
 .project {
   width: 100%;
 }
@@ -448,6 +433,7 @@ h3 {
 .project .project-container {
   height: 100%;
 }
+
 
 .project .project-container .project-title {
   text-align: center;
@@ -519,6 +505,8 @@ h3 {
   font-weight: 700;
   padding: 0.5rem 0;
 }
+
+
 
 .project .project-container .project-overview .right .project-tools__items {
   margin: 0;
@@ -641,5 +629,20 @@ h3 {
   z-index: 999;
   height: 70px;
 }
+
+.projectsPage {
+  padding-top: 0;
+  width: 100%;
+}
+
+.projectsPage .projects_container .container {
+  width: 90%;
+  margin: auto;
+}
+
+.projectsPage .projects_container .container .item {
+  padding-top: 80px;
+}
+
 
 
