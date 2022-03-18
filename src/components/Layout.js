@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { actionDrawerOpen } from '../redux/actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { actionDrawerClose, actionDrawerOpen } from '../redux/actions';
 import { staticFolder } from '../utils/url-lib';
 import Drawer from './Drawer';
 import PageRouter from './PageRouter';
@@ -10,9 +10,16 @@ import SliderItem from './SliderItem';
 
 const Layout = () => {
   const dispatch = useDispatch();
+  const drawerOpened = useSelector(state => state.drawerOpened);
 
-  const handleClickHamburger = (e)=> {
-    dispatch(actionDrawerOpen());
+  const handleClickHamburger = (e) => {
+    if (drawerOpened) {
+      // ako je opened zatvaramo ga
+      dispatch(actionDrawerClose());
+    } else {
+      // ako nije otvoren otvaramo ga
+      dispatch(actionDrawerOpen());
+    }
   };
 
   return (

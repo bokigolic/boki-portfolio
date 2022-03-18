@@ -1,4 +1,4 @@
-import { DRAWER_OPEN, ROUTE_SET } from "./actions";
+import { DRAWER_CLOSE, DRAWER_OPEN, ROUTE_SET } from "./actions";
 
 const initialState = {
   route: 'HOME',
@@ -18,6 +18,11 @@ const rootReducer = (state=initialState, action)=> {
       return {
         ...state,
         drawerOpened: true
+      };
+    case DRAWER_CLOSE:
+      return {
+        ...state,
+        drawerOpened: false
       };
 
     default:
