@@ -31,6 +31,13 @@ body {
   /* position: fixed; */
   top: 0;
   z-index: 102;
+  overflow: hidden;
+}
+
+.topbar.active {
+  background-color: #15023a;
+  color: #fff;
+  z-index: 103;
 }
 
 .topbar .wrapper,
@@ -653,12 +660,37 @@ a {
   right: 0px;
   width: 0px;
   overflow: hidden;
-  outline: 1px solid green;
   background-color: #15023a;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
 .drawer.opened {
   width: 350px;
 }
 
+.menuItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  width: 60%;
+}
+
+.menuItem {
+  margin-bottom: 20px;
+}
+
+.menuItem a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
 
 

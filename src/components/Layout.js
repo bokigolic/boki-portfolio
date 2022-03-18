@@ -27,7 +27,7 @@ const Layout = () => {
 
       <Drawer />
 
-      <div className="topbar false">
+      <div className={ drawerOpened ? "topbar active" : "topbar false"}>
         <div className="wrapper">
           <div className="left">
             <a href="/portfolio#intro"><div className="logo"><img className="boki-logo" src="/static/img/logo-bojan.png" alt="boki-logo" /></div></a>
