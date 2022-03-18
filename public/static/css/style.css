@@ -645,4 +645,20 @@ a {
 }
 
 
+.drawer {
+  z-index: 99;
+  position: fixed;
+  top: 70px;
+  bottom: 0px;
+  right: 0px;
+  width: 0px;
+  overflow: hidden;
+  outline: 1px solid green;
+  background-color: #15023a;
+}
+.drawer.opened {
+  width: 350px;
+}
+
+
 
