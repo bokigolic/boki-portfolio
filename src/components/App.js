@@ -19,10 +19,10 @@ const App = () => {
   useEffect(() => {
     // ovo ce biti izvrsen osvaki put kada se routeFragment promeni
 
-    if (routeFragment === '') {
-      window.location.hash = ''; // brisemo fragment deo url-a
-    } else {
+    if (typeof routeFragment === 'string') {
       window.location.hash = routeFragment; // setujemo fragment deo url-a na primer #contact
+    } else {
+      window.location.hash = ''; // brisemo fragment deo url-a
     }
 
   }, [routeFragment]);

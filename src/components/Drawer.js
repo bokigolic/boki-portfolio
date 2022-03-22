@@ -28,17 +28,17 @@ const Drawer = (props) => {
   return (
     <div className={drawerOpened ? "drawer opened" : "drawer"}>
 
-      <ul class="menuItems">
-        <li class="menuItem">
+      <ul className="menuItems">
+        <li className="menuItem">
           <a href="#intro" onClick={handleClickHome}>Home</a>
         </li>
-        <li class="menuItem">
+        <li className="menuItem">
           <a href="#portfolio" onClick={handleClickPortfolio}>Portfolio</a>
         </li>
-        <li class="menuItem">
+        <li className="menuItem">
           <a href="#projects" onClick={handleClickProjects}>Projects Overview</a>
         </li>
-        <li class="menuItem">
+        <li className="menuItem">
           <a href="#contact" onClick={handleClickContact}>Contact</a>
         </li>
       </ul>

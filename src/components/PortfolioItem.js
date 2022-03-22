@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { actionRouteSet } from "../redux/actions";
+import { actionRouteSet, actionRouteWithWithHashSet } from "../redux/actions";
 import { staticFolder } from "../utils/url-lib";
 
 const PortfolioItem = (props) => {
@@ -7,7 +7,8 @@ const PortfolioItem = (props) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    dispatch(actionRouteSet('PROJECTS'));
+    // dispatch(actionRouteSet('PROJECTS'));
+    dispatch(actionRouteWithWithHashSet('PROJECTS', props.fragment));
   };
 
   return (
@@ -16,8 +17,8 @@ const PortfolioItem = (props) => {
       onClick={handleClick}
     >
       <div className="item">
-        <img src={staticFolder() + "/img/primer1.png"} alt="primer portfolio pprojekta" />
-        <h3>React Burger Builder</h3>
+        <img src={staticFolder() + props.imagePath} alt="primer portfolio pprojekta" />
+        <h3>{props.title}</h3>
       </div>
     </a>
   )

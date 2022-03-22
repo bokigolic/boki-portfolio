@@ -3,7 +3,7 @@ const ProjectItem = (props) => {
     <div className="container" id="burger">
       <div className="item" >
         <div className="project">
-          <div class="project-container">
+          <div className="project-container">
 
             {props.children}
 
