@@ -39,7 +39,7 @@ const PageHome = (props) => {
       </section>
 
 
-      <section className="portfolio">
+      <section className="portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <div className="container">
 
@@ -55,7 +55,7 @@ const PageHome = (props) => {
       </section>
 
 
-      <section className="slider-container">
+      <section className="slider-container" >
         <div className="slider">
 
           <SliderItem />
