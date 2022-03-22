@@ -5,6 +5,12 @@ import SliderItem from './SliderItem';
 
 
 const PageHome = (props) => {
+
+  const handleSubmit = (e)=> {
+    e.preventDefault();
+    window.location.href = "mailto:address@dmail.com";
+  };
+
   return (
     <div className="sections">
 
@@ -71,7 +77,7 @@ const PageHome = (props) => {
         </div>
         <div className="right">
           <h2>Contact</h2>
-          <form id="myForm"><label>
+          <form id="myForm" onSubmit={handleSubmit}><label>
             <input name="email" type="email" id="email" placeholder="Your email..." required="" />
           </label>
             <label>
