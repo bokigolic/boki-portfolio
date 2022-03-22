@@ -2,18 +2,18 @@ import { staticFolder } from "../utils/url-lib";
 import ProjectItem from "./ProjectItem";
 
 
-const ProjectBurger = (props) => {
+const ProjectAmericanHikingClub = (props) => {
   return (
     <ProjectItem>
 
-      <div className="project-title" id="projectburger">Burger Builder</div>
+      <div className="project-title" id="americanhikingclub">American Hiking Club</div>
       <div className="project-overview"><div className="left">
         <div className="project-img-container">
-          <img src={staticFolder() + "/img/primer1.png"} alt="" />
+          <img src={staticFolder() + "/img/americanhikingclub-small.png"} alt="" />
         </div>
         <div className="project-buttons">
-          <a target="_blank" href="https://github.com/Berezka-creator/burger-app" rel="noreferrer">GitHub</a>
-          <a target="_blank" href="https://berezka-creator.github.io/burger-app/" rel="noreferrer">Live View</a>
+          <a target="_blank" href="https://github.com/bokigolic/project3" rel="noreferrer">GitHub</a>
+          <a target="_blank" href="http://american-hiking-club.herokuapp.com/" rel="noreferrer">Live View</a>
         </div>
       </div>
         <div className="right">
@@ -40,4 +40,4 @@ const ProjectBurger = (props) => {
   );
 };
 
-export default ProjectBurger;
+export default ProjectAmericanHikingClub;

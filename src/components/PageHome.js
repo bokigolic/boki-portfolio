@@ -45,7 +45,7 @@ const PageHome = (props) => {
 
           <PortfolioItem />
           <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
-          <PortfolioItem />
+          <PortfolioItem title="Burger..." imagePath="/img/primer1.png"  fragment="projectburger" />
           <PortfolioItem />
           <PortfolioItem />
           <PortfolioItem />

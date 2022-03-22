@@ -1,4 +1,5 @@
 import { staticFolder } from "../utils/url-lib";
+import ProjectAmericanHikingClub from "./ProjectAmericanHikingClub";
 import ProjectBurger from "./ProjectBurger";
 
 const PageProjects = (props) => {
@@ -7,7 +8,7 @@ const PageProjects = (props) => {
       <div className="projects_container">
 
         <ProjectBurger />
-        <ProjectBurger />
+        <ProjectAmericanHikingClub />
         <ProjectBurger />
         <ProjectBurger />
 
