@@ -1,4 +1,5 @@
 import React from 'react';
+import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
 import PortfolioItem from './PortfolioItem';
 import SliderItem from './SliderItem';
@@ -8,7 +9,14 @@ const PageHome = (props) => {
 
   const handleSubmit = (e)=> {
     e.preventDefault();
-    window.location.href = "mailto:address@dmail.com";
+    // window.location.href = "mailto:address@dmail.com"; // obo samo otvara program za slanje mejlova
+
+    const formData = {
+      readme: 'Ovo su privremeni izmisljeni podaci da sada ne pravimo celu funkcionalnost za baratanej formom',
+      youremail: 'nekikorisnik@mail.com',
+      text: 'Primer neke poruke iz contact forme'
+    };
+    ajax.sendContactEmail(formData);
   };
 
   return (
