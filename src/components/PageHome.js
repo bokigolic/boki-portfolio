@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
 import PortfolioItem from './PortfolioItem';
@@ -7,17 +7,40 @@ import SliderItem from './SliderItem';
 
 const PageHome = (props) => {
 
-  const handleSubmit = (e)=> {
+  const preset = {
+    email: '',
+    text: ''
+  };
+
+  const [state, setState] = useState(preset); // satte za formu
+
+  const handleChange = (e) => {
+    // ovo je univerzalni kod za upotrebu u formama unutar funkcionalnih komponenti sa useState hook-om.
+    const target = e.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+    setState({
+      ...state,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     // window.location.href = "mailto:address@dmail.com"; // obo samo otvara program za slanje mejlova
 
+    /*
     const formData = {
       readme: 'Ovo su privremeni izmisljeni podaci da sada ne pravimo celu funkcionalnost za baratanej formom',
       youremail: 'nekikorisnik@mail.com',
       text: 'Primer neke poruke iz contact forme'
     };
+    */
+    const formData = state;
     ajax.sendContactEmail(formData);
   };
+
+
 
   return (
     <div className="sections">
@@ -59,7 +82,7 @@ const PageHome = (props) => {
 
           <PortfolioItem />
           <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
-          <PortfolioItem title="Burger..." imagePath="/img/primer1.png"  fragment="projectburger" />
+          <PortfolioItem title="Burger..." imagePath="/img/primer1.png" fragment="projectburger" />
           <PortfolioItem />
           <PortfolioItem />
           <PortfolioItem />
@@ -86,10 +109,25 @@ const PageHome = (props) => {
         <div className="right">
           <h2>Contact</h2>
           <form id="myForm" onSubmit={handleSubmit}><label>
-            <input name="email" type="email" id="email" placeholder="Your email..." required="" />
+            <input
+              name="email"
+              value={state.email}
+              onChange={handleChange}
+              type="email"
+              id="email"
+              placeholder="Your email..."
+              required=""
+            />
           </label>
             <label>
-              <textarea name="comment" id="comment" placeholder="Write something..." required="" />
+              <textarea
+                name="text"
+                value={state.text}
+                onChange={handleChange}
+                id="text"
+                placeholder="Write something..."
+                required=""
+              />
             </label>
             <button type="submit">Send</button>
           </form>

@@ -3,7 +3,7 @@ import { DRAWER_CLOSE, DRAWER_OPEN, ROUTE_SET, ROUTE_WITH_FRAGMENT_SET } from ".
 const initialState = {
   route: 'HOME',
   routeFreshness: 0,
-  routeFragment: null,
+  routeFragment: '',
   drawerOpened: false
 };
 
