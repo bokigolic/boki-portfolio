@@ -215,7 +215,8 @@ a {
 }
 
 .intro .wrapper h3 {
-  font-size: 1rem;
+  font-size: 32px;
+  color:rgba(255, 104, 71, 0.8);
 }
 
 .intro .wrapper .social {

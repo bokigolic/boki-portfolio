@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Layout from './Layout';
 
 
+
 const App = () => {
 
   // const routeFreshness = useSelector(state => state.routeFreshness);
@@ -31,6 +32,7 @@ const App = () => {
   return (
     <div className="App">
       <Layout />
+     
     </div>
   );
 }

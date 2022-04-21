@@ -26,12 +26,15 @@ const ProjectAmericanHikingClub = (props) => {
               <li className="project-tools__item">ReactJS</li>
               <li className="project-tools__item">Redux</li>
               <li className="project-tools__item">API</li>
-              <li className="project-tools__item">Firebase</li>
+              <li className="project-tools__item">GraphQL</li>
+              <li className="project-tools__item">MongoDB Atlas</li>
+
+
             </ul>
           </div>
           <div className="project-description">
             <h3 className="project-subtitle">Description:</h3>
-            <p className="project-paragraph">This is a web application that uses ReactJS to create your custom burger, you can choose ingredients and see how your burger will look like and how much will it cost,  The burger animation is done through CSS for faster perfomance. Than you can proceed to checkout and once you submited, it is stored in a database using Firebase. This allows to login and view your orders anytime in the future. </p>
+            <p className="project-paragraph">This is an application that has the ability to register users. Once the user is registered, it is necessary to log in. The logged in user has the ability to add or delete the tour, and to modify it. Also, there is the possibility of leaving comments and revews.</p>
           </div>
         </div>
       </div>

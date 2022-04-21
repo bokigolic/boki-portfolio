@@ -3,6 +3,7 @@ import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
 import PortfolioItem from './PortfolioItem';
 import SliderItem from './SliderItem';
+import TextScroller from './TextScroller';
 
 
 const PageHome = (props) => {
@@ -50,7 +51,9 @@ const PageHome = (props) => {
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Bojan Golic </h1>
-          <h3><span>Front End Developer</span><span className="ityped-cursor">|</span></h3>
+          
+
+          <h3><span></span><span className="ityped-cursor"><TextScroller text="FullStak Developer" /></span></h3>
           <div className="social">
             <a href="https://www.linkedin.com/in/bojan-golic-35174120a/" target="_blank" rel="noreferrer">
               <img className="icone" src={staticFolder() + "/img/linkedin.png"} alt="" />
@@ -80,7 +83,7 @@ const PageHome = (props) => {
         <h1>Portfolio</h1>
         <div className="container">
 
-          <PortfolioItem />
+          <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="Horiseonwebsite" />
           <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
           <PortfolioItem title="Burger..." imagePath="/img/primer1.png" fragment="projectburger" />
           <PortfolioItem />
