@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
+import BootstrapPortfolio from './BootstrapPortfolio';
 import PortfolioItem from './PortfolioItem';
 import SliderItem from './SliderItem';
 import TextScroller from './TextScroller';
@@ -83,12 +84,13 @@ const PageHome = (props) => {
         <h1>Portfolio</h1>
         <div className="container">
 
-          <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="Horiseonwebsite" />
+          <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="horiseonwebsite" />
           <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
-          <PortfolioItem title="Burger..." imagePath="/img/primer1.png" fragment="projectburger" />
+          <PortfolioItem title="Ana Olson website..." imagePath="/img/anaolson.jpg" fragment="anaolson" />
+          <PortfolioItem title="Fashion Website" imagePath="/img/fashion-site.jpg" fragment="fashionsite" />
+          <BootstrapPortfolio title="Fashion Website" imagePath="/img/fashion-site.jpg" fragment="fashionsite" />
           <PortfolioItem />
-          <PortfolioItem />
-          <PortfolioItem />
+          BootstrapPortfolio
 
         </div>
       </section>
