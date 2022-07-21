@@ -15,7 +15,8 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         route: action.payload,
         routeFreshness: state.routeFreshness + 1,
-        routeFragment: ''
+        routeFragment: '',
+        drawerOpened: false
       };
 
     case ROUTE_WITH_FRAGMENT_SET:
@@ -23,7 +24,8 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         route: action.payload.name,
         routeFreshness: state.routeFreshness + 1,
-        routeFragment: action.payload.fragment
+        routeFragment: action.payload.fragment,
+        drawerOpened: false
       };
 
     case DRAWER_OPEN:

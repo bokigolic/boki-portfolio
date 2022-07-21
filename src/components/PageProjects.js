@@ -1,9 +1,11 @@
 import { staticFolder } from "../utils/url-lib";
 import AnaOlsonWebsite from "./AnaOlsonWebsite";
 import BootstrapPortfolio from "./BootstrapPortfolio";
+import CarPerformance from "./CarPerformance";
 import Horiseon from "./Horiseon";
 import ProjectAmericanHikingClub from "./ProjectAmericanHikingClub";
-import ProjectBurger from "./ProjectBurger";
+import FashionWebsite from "./FashionWebsite";
+
 
 const PageProjects = (props) => {
   return (
@@ -13,9 +15,10 @@ const PageProjects = (props) => {
         <Horiseon />
         <ProjectAmericanHikingClub />
         <AnaOlsonWebsite />
-        <ProjectBurger />
-        BootstrapPortfolio
+        <FashionWebsite />
         <BootstrapPortfolio />
+        <CarPerformance />
+
 
       </div>
     </div>

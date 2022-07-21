@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
-import BootstrapPortfolio from './BootstrapPortfolio';
 import PortfolioItem from './PortfolioItem';
 import SliderItem from './SliderItem';
 import TextScroller from './TextScroller';
+
 
 
 const PageHome = (props) => {
@@ -71,7 +71,7 @@ const PageHome = (props) => {
           </div>
           <div className="buttons">
             <a href="/#portfolio">Portfolio</a>
-            <a href="/resume">Resume</a>
+            <a target="_blank" href="/static/resume/Bojan_Golic-Resume.pdf">Resume</a>
           </div>
         </div>
         <a href="#portfolio" id="arrow">
@@ -86,11 +86,15 @@ const PageHome = (props) => {
 
           <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="horiseonwebsite" />
           <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
-          <PortfolioItem title="Ana Olson website..." imagePath="/img/anaolson.jpg" fragment="anaolson" />
+          <PortfolioItem title="Ana Olson website" imagePath="/img/anaolson.jpg" fragment="anaolson" />
           <PortfolioItem title="Fashion Website" imagePath="/img/fashion-site.jpg" fragment="fashionsite" />
-          <BootstrapPortfolio title="Fashion Website" imagePath="/img/fashion-site.jpg" fragment="fashionsite" />
-          <PortfolioItem />
-          BootstrapPortfolio
+          <PortfolioItem title="Car Performance" imagePath="/img/car-performance.jpg" fragment="car-performance" />
+          <PortfolioItem title="Bootstrap Portfolio" imagePath="/img/bootstrap-portfolio.jpg" fragment="bootstrapportfolio" />
+  
+
+
+       
+    
 
         </div>
       </section>
@@ -115,6 +119,7 @@ const PageHome = (props) => {
           <h2>Contact</h2>
           <form id="myForm" onSubmit={handleSubmit}><label>
             <input
+              disabled
               name="email"
               value={state.email}
               onChange={handleChange}
@@ -126,6 +131,7 @@ const PageHome = (props) => {
           </label>
             <label>
               <textarea
+                disabled
                 name="text"
                 value={state.text}
                 onChange={handleChange}
@@ -134,7 +140,7 @@ const PageHome = (props) => {
                 required=""
               />
             </label>
-            <button type="submit">Send</button>
+            <button disabled type="submit">Send</button>
           </form>
         </div>
       </section>

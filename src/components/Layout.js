@@ -1,11 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { actionDrawerClose, actionDrawerOpen } from '../redux/actions';
-import { staticFolder } from '../utils/url-lib';
 import Drawer from './Drawer';
 import PageRouter from './PageRouter';
-import PortfolioItem from './PortfolioItem';
-import SliderItem from './SliderItem';
+
 
 
 const Layout = () => {
