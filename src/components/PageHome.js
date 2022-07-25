@@ -3,6 +3,7 @@ import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
 import PortfolioItem from './PortfolioItem';
 import SliderItem from './SliderItem';
+import SliderProjects from './SliderProjects';
 import TextScroller from './TextScroller';
 
 
@@ -54,7 +55,7 @@ const PageHome = (props) => {
           <h1>Bojan Golic </h1>
           
 
-          <h3><span></span><span className="ityped-cursor"><TextScroller text="FullStak Developer" /></span></h3>
+          <h3><span></span><span className="ityped-cursor"><TextScroller text="Full Stak Developer" /></span></h3>
           <div className="social">
             <a href="https://www.linkedin.com/in/bojan-golic-35174120a/" target="_blank" rel="noreferrer">
               <img className="icone" src={staticFolder() + "/img/linkedin.png"} alt="" />
@@ -72,6 +73,8 @@ const PageHome = (props) => {
           <div className="buttons">
             <a href="/#portfolio">Portfolio</a>
             <a target="_blank" href="/static/resume/Bojan_Golic-Resume.pdf">Resume</a>
+            <a target="_blank" href="/static/resume/GW_Certificate.pdf">Certificate</a>
+        
           </div>
         </div>
         <a href="#portfolio" id="arrow">
@@ -81,35 +84,19 @@ const PageHome = (props) => {
 
 
       <section className="portfolio" id="portfolio">
-        <h1>Portfolio</h1>
+        <h1>My Projects</h1>
         <div className="container">
-
           <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="horiseonwebsite" />
           <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
           <PortfolioItem title="Ana Olson website" imagePath="/img/anaolson.jpg" fragment="anaolson" />
           <PortfolioItem title="Fashion Website" imagePath="/img/fashion-site.jpg" fragment="fashionsite" />
           <PortfolioItem title="Car Performance" imagePath="/img/car-performance.jpg" fragment="car-performance" />
           <PortfolioItem title="Bootstrap Portfolio" imagePath="/img/bootstrap-portfolio.jpg" fragment="bootstrapportfolio" />
-  
-
-
-       
-    
-
         </div>
       </section>
-
-
-      <section className="slider-container" >
-        <div className="slider">
-
-          <SliderItem />
-
-        </div>
-        <img src={staticFolder() + "/img/arrow.png"} className="arrow left" alt="" />
-        <img src={staticFolder() + "/img/arrow.png"} className="arrow right" alt="" />
-      </section>
-
+     
+          <SliderProjects />
+     
 
       <section className="contact" id="contact">
         <div className="left">
