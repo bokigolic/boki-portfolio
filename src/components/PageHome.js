@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
 import PortfolioItem from './PortfolioItem';
-import SliderItem from './SliderItem';
 import SliderProjects from './SliderProjects';
 import TextScroller from './TextScroller';
 
@@ -71,9 +70,9 @@ const PageHome = (props) => {
             </a>
           </div>
           <div className="buttons">
-            <a href="/#portfolio">Portfolio</a>
-            <a target="_blank" href="/static/resume/Bojan_Golic-Resume.pdf">Resume</a>
-            <a target="_blank" href="/static/resume/GW_Certificate.pdf">Certificate</a>
+            <a className='moved-button' href="/#portfolio">Portfolio</a>
+            <a className='moved-button1' target="_blank" href="/static/resume/Bojan_Golic-Resume.pdf">Resume</a>
+            <a className='moved-button2' target="_blank" href="/static/resume/GW_Certificate.pdf">Certificate</a>
         
           </div>
         </div>

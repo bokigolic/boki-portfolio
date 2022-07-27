@@ -175,7 +175,7 @@ a {
 
 .intro .imgContainer {
   background: linear-gradient(180deg, #f5f5f5 10%, transparent),
-    url(/static/img/bg.jpg) 50% / cover no-repeat;
+    url(/static/img/bg3.jpg) 50% / cover no-repeat;
 
   height: 90%;
   width: 100%;
@@ -252,6 +252,189 @@ a {
   z-index: 2;
   margin: 1rem 0;
   display: flex;
+}
+
+.moved-button {
+  text-decoration: none;
+  border: 3px solid yellow;
+  color: transparent;
+  padding: 40px 80px;
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.moved-button:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(37, 56, 110);
+  font-size: 10px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+.moved-button:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+.moved-button:after {
+  content: "Portfolio";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(37, 56, 110);
+  font-size: 10px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+.moved-button:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
+
+.moved-button1 {
+  text-decoration: none;
+  border: 3px solid yellow;
+  color: transparent;
+  padding: 40px 80px;
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.moved-button1:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(37, 56, 110);
+  font-size: 10px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+.moved-button1:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+.moved-button1:after {
+  content: "Resume";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(37, 56, 110);
+  font-size: 10px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+.moved-button1:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
+
+.moved-button2 {
+  text-decoration: none;
+  border: 3px solid yellow;
+  color: transparent;
+  padding: 40px 80px;
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.moved-button2:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(34, 34, 34);
+  font-size: 10px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+.moved-button2:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+.moved-button2:after {
+  content: "Certificate";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(37, 56, 110);
+  font-size: 10px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+.moved-button2:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
 }
 
 .intro .wrapper .buttons a {
