@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { staticFolder } from "../utils/url-lib";
 import BootstrapPortfolio from "./BootstrapPortfolio";
 import CarPerformance from "./CarPerformance";
@@ -51,7 +51,13 @@ const SliderProjects = (props) => {
     
   };
 
-  
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // AUTO ADVANCE NEXT SLIDE
+      handleClickNext();
+      return () => clearInterval(intervalId);
+    }, 5000);
+  }, []);
 
   let offset = (slideIndex * -100) + '%';  
   

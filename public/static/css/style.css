@@ -101,6 +101,16 @@ a {
   font-weight: 500;
 }
 
+@media (max-width: 40rem) {
+  .topbar .wrapper .left .itemContainer span span {
+    display: none;
+  }
+}
+
+.topbar .wrapper .left .itemContainer span span {
+  display: none;
+}
+
 .topbar .wrapper .right .humburger {
   width: 30px;
   height: 25px;
