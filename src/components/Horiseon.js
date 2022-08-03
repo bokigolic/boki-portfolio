@@ -22,11 +22,11 @@ const Horiseon = () => {
             <ul className="project-tools__items">
               <li className="project-tools__item">HTML</li>
               <li className="project-tools__item">CSS</li>
-              <li className="project-tools__item">JavaScript</li> </ul>
+            </ul>
           </div>
           <div className="project-description">
             <h3 className="project-subtitle">Description:</h3>
-            <p className="project-paragraph">This is a web application that uses ReactJS to create your custom burger, you can choose ingredients and see how your burger will look like and how much will it cost,  The burger animation is done through CSS for faster perfomance. Than you can proceed to checkout and once you submited, it is stored in a database using Firebase. This allows to login and view your orders anytime in the future. </p>
+            <p className="project-paragraph">This is a web application that uses HTML and CSS to create a simple website. </p>
           </div>
         </div>
       </div>

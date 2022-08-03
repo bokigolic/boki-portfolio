@@ -31,7 +31,8 @@ const AnaOlsonWebsite = (props) => {
           </div>
           <div className="project-description">
             <h3 className="project-subtitle">Description:</h3>
-            <p className="project-paragraph">This is a responsive Website that shows the use of HTML and CSS, as well as Bootstrap. There is a slider in the Header, and a courasell slider was used, the fonts were taken from FontAwesome. In the body pages we have a container that holds all the content. Here I used a grid system that holds all these images, as well as on the manual slider below. Footer ... </p>
+            <p className="project-paragraph">Building a responsive website by using HTML, CSS and Bootstrap for creating and styling the website page. There is a slider in the header, and the courasell slider was used, the fonts were taken from FontAwesome.
+              On the body pages we have a container that holds all the content. I've used a grid system that holds all of these images, as well as on the slider below.</p>
           </div>
         </div>
       </div>

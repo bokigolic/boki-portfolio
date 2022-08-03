@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
+
 import PortfolioItem from './PortfolioItem';
 import SliderProjects from './SliderProjects';
 import TextScroller from './TextScroller';
@@ -50,7 +51,7 @@ const PageHome = (props) => {
       <section className="intro" id="intro">
         <div className="imgContainer"></div>
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
+          
           <h1>Bojan Golic </h1>
           
 
@@ -93,6 +94,10 @@ const PageHome = (props) => {
           <PortfolioItem title="Bootstrap Portfolio" imagePath="/img/bootstrap-portfolio.jpg" fragment="bootstrapportfolio" />
         </div>
       </section>
+
+
+        
+
      
           <SliderProjects />
      

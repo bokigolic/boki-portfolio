@@ -24,12 +24,13 @@ const FashionWebsite = (props) => {
               <li className="project-tools__item">CSS</li>
               <li className="project-tools__item">Bootstrap</li>
 
-       
+
             </ul>
           </div>
           <div className="project-description">
             <h3 className="project-subtitle">Description:</h3>
-            <p className="project-paragraph">I used HTML and CSS to develop a website. It is important to note that I introduced certain animations using CSS to make the site look more dynamic. I also used Bootstrap. This web site is responsive and can be used on small devices. </p>
+            <p className="project-paragraph">Building a website for a fashion brand to sell things by using HTML, CSS and Bootstrap for creating and styling the website page. Introduced certain animations using CSS to make the site look more dynamic. This website is responsive and can be used on small devices.
+            </p>
           </div>
         </div>
       </div>

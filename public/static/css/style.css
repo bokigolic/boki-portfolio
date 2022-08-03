@@ -68,6 +68,12 @@ a {
   margin-right: 40px;
 }
 
+@media (max-width: 40rem) {
+  .topbar .wrapper .left .logo {
+    margin-right: 10px;
+  }
+}
+
 .topbar .wrapper .left .logo,
 .topbar .wrapper .left a {
   text-decoration: none;
@@ -78,6 +84,12 @@ a {
   display: flex;
   align-items: center;
   margin-left: 40px;
+}
+
+@media (max-width: 40rem) {
+  .topbar .wrapper .left .itemContainer {
+    margin-left: 10px;
+  }
 }
 
 .topbar .wrapper .left .itemContainer .icon {
@@ -105,10 +117,6 @@ a {
   .topbar .wrapper .left .itemContainer span span {
     display: none;
   }
-}
-
-.topbar .wrapper .left .itemContainer span span {
-  display: none;
 }
 
 .topbar .wrapper .right .humburger {
@@ -175,7 +183,7 @@ a {
 
 .intro .imgContainer {
   background: linear-gradient(180deg, #f5f5f5 10%, transparent),
-    url(/static/img/bg3.jpg) 50% / cover no-repeat;
+    url(/static/img/bg7.jpg) 50% / cover no-repeat;
 
   height: 90%;
   width: 100%;
@@ -198,6 +206,7 @@ a {
 
 .intro .wrapper {
   width: 80%;
+  min-width: 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -437,6 +446,14 @@ a {
   opacity: 0;
 }
 
+.image-city {
+  /* width: 150px; */
+  transform: rotate(-10deg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .intro .wrapper .buttons a {
   color: #15023a;
   border-radius: 8px;
@@ -460,17 +477,23 @@ a {
 
 .intro .wrapper .buttons a {
   color: #15023a;
-  border-radius: 8px;
+  border-radius: 10px;
   border: none;
   padding: 0.5rem;
-  margin: 0.3rem 0.5rem;
+  margin: 0.1rem 0.3rem;
   background-color: #fff;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 400;
   box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 50%);
   cursor: pointer;
   outline: none;
   text-decoration: none;
+}
+
+/* NOVA section school */
+
+.school-projects {
+  background-color: rgb(233, 240, 240);
 }
 
 /* section portfolio */
@@ -698,6 +721,13 @@ a {
   margin-bottom: 1rem;
 }
 
+.project .project-container .project-overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 @media (min-width: 40rem) {
   .project .project-container .project-overview {
     display: flex;
@@ -711,6 +741,7 @@ a {
   justify-content: center;
   align-items: center;
   align-content: center;
+  min-width: 8rem;
 }
 
 .project .project-container .project-overview .left .project-img-container {
@@ -754,6 +785,12 @@ a {
 .project .project-container .project-overview .right {
   flex: 3 1;
   padding: 0 1rem;
+  min-width: 8rem;
+}
+
+.project .project-container .project-overview .right .project-img-container {
+  overflow: hidden;
+  padding-bottom: 1rem;
 }
 
 .project .project-container .project-overview .right .project-subtitle {
