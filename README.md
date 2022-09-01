@@ -6,6 +6,8 @@ To view the live portfolio, please visit [My Portfolio Page](http://www.bojangol
 
 This site was created to be able to view all current and past work in regards to full stack web development. The back end was created so the admin can add, edit or remove projects, as well as to demonstrate understanding of database construction. 
 
+<img width="931" alt="Screenshot 2022-08-31 230954" src="https://user-images.githubusercontent.com/71577349/187823899-78db5abf-21ec-4e8a-8107-f67611daf8ff.png">
+
 ## Tech Used
 
 - React
