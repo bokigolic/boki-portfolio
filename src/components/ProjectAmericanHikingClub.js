@@ -13,7 +13,7 @@ const ProjectAmericanHikingClub = (props) => {
         </div>
         <div className="project-buttons">
           <a target="_blank" href="https://github.com/bokigolic/project3" rel="noreferrer">GitHub</a>
-          <a target="_blank" href="http://american-hiking-club.herokuapp.com/" rel="noreferrer">Live View</a>
+          <a target="_blank" href="https://hiking-5.herokuapp.com/" rel="noreferrer">Live View</a>
         </div>
       </div>
         <div className="right">

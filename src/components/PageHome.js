@@ -30,15 +30,7 @@ const PageHome = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // window.location.href = "mailto:address@dmail.com"; // obo samo otvara program za slanje mejlova
 
-    /*
-    const formData = {
-      readme: 'Ovo su privremeni izmisljeni podaci da sada ne pravimo celu funkcionalnost za baratanej formom',
-      youremail: 'nekikorisnik@mail.com',
-      text: 'Primer neke poruke iz contact forme'
-    };
-    */
     const formData = state;
     ajax.sendContactEmail(formData);
   };
@@ -71,7 +63,7 @@ const PageHome = (props) => {
             </a>
           </div>
           <div className="buttons">
-            <a className='moved-button' href="/#portfolio">Portfolio</a>
+            <a className='moved-button' href="https://github.com/bokigolic/boki-portfolio">Portfolio</a>
             <a className='moved-button1' target="_blank" href="/static/resume/Bojan_Golic-Resume.pdf">Resume</a>
             <a className='moved-button2' target="_blank" href="/static/resume/GW_Certificate.pdf">Certificate</a>
         
