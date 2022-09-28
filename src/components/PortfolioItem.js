@@ -17,7 +17,7 @@ const PortfolioItem = (props) => {
       onClick={handleClick}
     >
       <div className="item">
-        <img src={staticFolder() + props.imagePath} alt="primer portfolio pprojekta" />
+        <img src={staticFolder() + props.imagePath} alt="primer portfolio projekta" />
         <h3>{props.title}</h3>
       </div>
     </a>

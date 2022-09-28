@@ -1,23 +1,16 @@
 import { useEffect, useState } from "react";
 import { staticFolder } from "../utils/url-lib";
-import BootstrapPortfolio from "./BootstrapPortfolio";
-import CarPerformance from "./CarPerformance";
-import CityHome from "./CityHome";
-import Contents from "./Contents";
-import FashionWebsite from "./FashionWebsite";
-import SliderItem from "./SliderItem";
-import Talija from "./Talija";
-import Travel from "./Travel";
-import Vanja from "./Vanja";
-import Virtuo from "./Virtuo";
+import CityHome from "../components/city-bl/CityHome";
+import Contents from "../components/Contents";
+import SliderItem from "../components/SliderItem";
+import Talija from "../components/city-bl/Talija";
+import Travel from "../components/city-bl/Travel";
+import Vanja from "../components/city-bl/Vanja";
+import Virtuo from "../components/city-bl/Virtuo";
 
 const SliderProjects = (props) => {
 
   const [slideIndex, setSlideIndex] = useState(0);
-
-
-
-
   let jsxSlides = [
     (
       <SliderItem key={0}>
@@ -26,27 +19,27 @@ const SliderProjects = (props) => {
     ),
     (
       <SliderItem >
-        <Contents key={2} />
+        <Contents key={1} />
       </SliderItem>
     ),
     (
       <SliderItem >
-        <Talija key={3} />
+        <Talija key={2} />
       </SliderItem>
     ),
     (
       <SliderItem >
-        <Vanja key={4} />
+        <Vanja key={3} />
       </SliderItem>
     ),
     (
       <SliderItem >
-        <Virtuo key={5} />
+        <Virtuo key={4} />
       </SliderItem>
     ),
     (
       <SliderItem >
-        <Travel key={6} />
+        <Travel key={5} />
       </SliderItem>
     ),
   ];

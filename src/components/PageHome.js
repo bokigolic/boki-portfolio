@@ -1,23 +1,18 @@
 import React, { useState } from 'react';
 import { ajax } from '../utils/ajax-adapter';
 import { staticFolder } from '../utils/url-lib';
-
 import PortfolioItem from './PortfolioItem';
 import SliderProjects from './SliderProjects';
 import TextScroller from './TextScroller';
 
-
-
 const PageHome = (props) => {
-
   const preset = {
     email: '',
     text: ''
   };
-
   const [state, setState] = useState(preset); // satte za formu
-
   const handleChange = (e) => {
+
     // ovo je univerzalni kod za upotrebu u formama unutar funkcionalnih komponenti sa useState hook-om.
     const target = e.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -64,7 +59,7 @@ const PageHome = (props) => {
           </div>
           <div className="buttons">
             <a className='moved-button' href="https://github.com/bokigolic/boki-portfolio">Portfolio</a>
-            <a className='moved-button1' target="_blank" href="/static/resume/Bojan_Golic-Resume.pdf">Resume</a>
+            <a className='moved-button1' target="_blank" href="/static/resume/Resume-BojanGolic.pdf">Resume</a>
             <a className='moved-button2' target="_blank" href="/static/resume/GW_Certificate.pdf">Certificate</a>
         
           </div>
@@ -78,8 +73,9 @@ const PageHome = (props) => {
       <section className="portfolio" id="portfolio">
         <h1>My Projects</h1>
         <div className="container">
-          <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="horiseonwebsite" />
           <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
+          <PortfolioItem title="Gym" imagePath="/img/gym.png" fragment="gym" />
+          <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="horiseonwebsite" />
           <PortfolioItem title="Ana Olson website" imagePath="/img/anaolson.jpg" fragment="anaolson" />
           <PortfolioItem title="Fashion Website" imagePath="/img/fashion-site.jpg" fragment="fashionsite" />
           <PortfolioItem title="Car Performance" imagePath="/img/car-performance.jpg" fragment="car-performance" />

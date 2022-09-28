@@ -5,6 +5,7 @@ import CarPerformance from "./CarPerformance";
 import Horiseon from "./Horiseon";
 import ProjectAmericanHikingClub from "./ProjectAmericanHikingClub";
 import FashionWebsite from "./FashionWebsite";
+import Gym from "./Gym";
 
 
 const PageProjects = (props) => {
@@ -13,6 +14,7 @@ const PageProjects = (props) => {
       <div className="projects_container">
 
         <Horiseon />
+        <Gym />
         <ProjectAmericanHikingClub />
         <AnaOlsonWebsite />
         <FashionWebsite />
