@@ -1,7 +1,7 @@
 
 
-import { staticFolder } from "../utils/url-lib";
-import ProjectItem from "./ProjectItem";
+import { staticFolder } from "../../utils/url-lib";
+import ProjectItem from "../ProjectItem";
 
 const CityHome = () => {
 
@@ -24,12 +24,7 @@ const CityHome = () => {
               This magazine is a periodical publication, published on a regular schedule monthly, containing a variety of content. They are generally financed by advertisin<br/>
               City Bl magazine is free and available in all attractive locations.
               Our team made an effort to deliver it where you can find it, read it and enjoy it.<br/>
-             <b> Yes, we are free</b><br/>
-             <b> Yes, we are accurate</b><br/>
-             <b> Yes, we are reliable</b><br/>
-             <b> Yes, we follow all current events in our city and present them to you</b><br/>
-             <b>  Yes, we promote people who contribute to the development of the city, talk to them and bring you their successes, achievements,</b><br/><br/>
-             <b>Yes, WE ARE CITY BL MAGAZINE</b> </p>
+          </p>
           </div>
         </div>
       </div>

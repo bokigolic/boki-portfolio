@@ -1,7 +1,7 @@
 
 
-import { staticFolder } from "../utils/url-lib";
-import ProjectItem from "./ProjectItem";
+import { staticFolder } from "../../utils/url-lib";
+import ProjectItem from "../ProjectItem";
 
 const Vanja = () => {
 
