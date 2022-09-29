@@ -1,18 +1,16 @@
 import { staticFolder } from "../utils/url-lib";
-import AnaOlsonWebsite from "./AnaOlsonWebsite";
-import BootstrapPortfolio from "./BootstrapPortfolio";
-import CarPerformance from "./CarPerformance";
-import Horiseon from "./Horiseon";
-import ProjectAmericanHikingClub from "./ProjectAmericanHikingClub";
-import FashionWebsite from "./FashionWebsite";
-import Gym from "./Gym";
-
+import AnaOlsonWebsite from "../components/projects/AnaOlsonWebsite";
+import BootstrapPortfolio from "../components/projects/BootstrapPortfolio";
+import CarPerformance from "../components/projects/CarPerformance";
+import Horiseon from "../components/projects/Horiseon";
+import ProjectAmericanHikingClub from "../components/projects/ProjectAmericanHikingClub";
+import FashionWebsite from "../components/projects/FashionWebsite";
+import Gym from "../components/projects/Gym";
 
 const PageProjects = (props) => {
   return (
     <div className="projectsPage">
       <div className="projects_container">
-
         <Horiseon />
         <Gym />
         <ProjectAmericanHikingClub />
@@ -20,11 +18,8 @@ const PageProjects = (props) => {
         <FashionWebsite />
         <BootstrapPortfolio />
         <CarPerformance />
-
-
       </div>
     </div>
   );
 };
-
 export default PageProjects;

@@ -1,23 +1,17 @@
-
-
-import { staticFolder } from "../utils/url-lib";
-import ProjectItem from "./ProjectItem";
+import { staticFolder } from "../../utils/url-lib";
+import ProjectItem from "../ProjectItem";
 
 const Contents = () => {
-
   return (
     <ProjectItem>
-
       <div className="project-title">Table of Contents</div>
       <div className="project-overview">
         <div className="right">
           <div className="project-img-container">
             <img className='image-city' src={staticFolder() + "/imgcity/sadrzaj.jpg"} alt="city magazine" />
           </div>
-
         </div>
         <div className="left">
-
           <div className="project-description">
             <h3 className="project-subtitle">Description: Table of Contetnts</h3>
             <p className="project-paragraph">The content of the magazine is presented through concise titles

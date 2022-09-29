@@ -2,10 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import Layout from './Layout';
 
-
-
 const App = () => {
-
   // const routeFreshness = useSelector(state => state.routeFreshness);
   const routeFragment = useSelector(state => state.routeFragment);
 
@@ -15,7 +12,7 @@ const App = () => {
 
     // INIT
 
-  }, []);
+  }, []); 
 
   useEffect(() => {
     // ovo ce biti izvrsen osvaki put kada se routeFragment promeni
@@ -32,9 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <Layout />
-     
     </div>
   );
 }
-
 export default App;

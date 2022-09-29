@@ -1,19 +1,19 @@
-import { staticFolder } from "../utils/url-lib";
-import ProjectItem from "./ProjectItem";
+import { staticFolder } from "../../utils/url-lib";
+import ProjectItem from "../ProjectItem";
 
 
-const Gym = (props) => {
+const ProjectAmericanHikingClub = (props) => {
   return (
     <ProjectItem>
 
-      <div className="project-title" id="gym">Gym Exercises App</div>
+      <div className="project-title" id="americanhikingclub">American Hiking Club</div>
       <div className="project-overview"><div className="left">
         <div className="project-img-container">
-          <img src={staticFolder() + "/img/gym.png"} alt="" />
+          <img src={staticFolder() + "/img/americanhikingclub-small.png"} alt="" />
         </div>
         <div className="project-buttons">
-          <a target="_blank" href="https://github.com/bokigolic/gym-exercises-app" rel="noreferrer">GitHub</a>
-         <a target="_blank" href="#" rel="noreferrer">In Progress</a>
+          <a target="_blank" href="https://github.com/bokigolic/project3" rel="noreferrer">GitHub</a>
+          <a target="_blank" href="https://hiking-5.herokuapp.com/" rel="noreferrer">Live View</a>
         </div>
       </div>
         <div className="right">
@@ -24,10 +24,10 @@ const Gym = (props) => {
               <li className="project-tools__item">CSS</li>
               <li className="project-tools__item">JavaScript</li>
               <li className="project-tools__item">ReactJS</li>
-              <li className="project-tools__item">React Router </li>
+              <li className="project-tools__item">Redux</li>
               <li className="project-tools__item">API</li>
-              <li className="project-tools__item">Material UI (5)</li>
-              <li className="project-tools__item">Reack Hooks</li>
+              <li className="project-tools__item">GraphQL</li>
+              <li className="project-tools__item">MongoDB Atlas</li>
 
 
             </ul>
@@ -43,4 +43,4 @@ const Gym = (props) => {
   );
 };
 
-export default Gym;
+export default ProjectAmericanHikingClub;
