@@ -12,7 +12,7 @@ const App = () => {
 
     // INIT
 
-  }, []);
+  }, []); 
 
   useEffect(() => {
     // ovo ce biti izvrsen osvaki put kada se routeFragment promeni
