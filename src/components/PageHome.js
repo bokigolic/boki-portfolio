@@ -50,16 +50,10 @@ const PageHome = (props) => {
             <a href="https://github.com/bokigolic" target="_blank" rel="noreferrer">
               <img className="icone" src={staticFolder() + "/img/github.png"} alt="" />
             </a>
-            <a href="https://www.facebook.com/bokiigolic/" target="_blank" rel="noreferrer">
-              <img className="icone" src={staticFolder() + "/img/facebook.png"} alt="" />
-            </a>
-            <a href="https://www.instagram.com/boki_golic/" target="_blank" rel="noreferrer">
-              <img className="icone inst" src={staticFolder() + "/img/instagram.png"} alt="" />
-            </a>
+         
           </div>
           <div className="buttons">
             <a className='moved-button' href="https://github.com/bokigolic/boki-portfolio">Portfolio</a>
-            <a className='moved-button1' target="_blank" href="/static/resume/Resume-BojanGolic.pdf">Resume</a>
             <a className='moved-button2' target="_blank" href="/static/resume/GW_Certificate.pdf">Certificate</a>
         
           </div>
@@ -73,11 +67,12 @@ const PageHome = (props) => {
       <section className="portfolio" id="portfolio">
         <h1>My Projects</h1>
         <div className="container">
-          <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
           <PortfolioItem title="Gym" imagePath="/img/gym.png" fragment="gym" />
-          <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="horiseonwebsite" />
+          <PortfolioItem title="Facebook clone" imagePath="/img/facebook-clone.png" fragment="facebook" />
+          <PortfolioItem title="American Hiking Club" imagePath="/img/americanhikingclub-small.png" fragment="americanhikingclub" />
           <PortfolioItem title="Ana Olson website" imagePath="/img/anaolson.jpg" fragment="anaolson" />
           <PortfolioItem title="Fashion Website" imagePath="/img/fashion-site.jpg" fragment="fashionsite" />
+          <PortfolioItem title="Horiseon" imagePath="/img/firstSite.jpg" fragment="horiseonwebsite" />
           <PortfolioItem title="Car Performance" imagePath="/img/car-performance.jpg" fragment="car-performance" />
           <PortfolioItem title="Bootstrap Portfolio" imagePath="/img/bootstrap-portfolio.jpg" fragment="bootstrapportfolio" />
         </div>
