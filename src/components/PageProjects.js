@@ -6,6 +6,7 @@ import Horiseon from "../components/projects/Horiseon";
 import ProjectAmericanHikingClub from "../components/projects/ProjectAmericanHikingClub";
 import FashionWebsite from "../components/projects/FashionWebsite";
 import Gym from "../components/projects/Gym";
+import FacebookClone from "./projects/FacebookClone";
 
 const PageProjects = (props) => {
   return (
@@ -14,6 +15,7 @@ const PageProjects = (props) => {
         <Horiseon />
         <Gym />
         <ProjectAmericanHikingClub />
+        <FacebookClone />
         <AnaOlsonWebsite />
         <FashionWebsite />
         <BootstrapPortfolio />
