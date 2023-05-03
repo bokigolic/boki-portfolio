@@ -5,7 +5,6 @@ Functionality
 This site was created to showcase my current and past work in full stack web development. The back end allows the admin to add, edit, or remove projects, demonstrating an understanding of database construction.
 
 <img width="931" alt="Screenshot 2022-08-31 230954" src="https://user-images.githubusercontent.com/71577349/187823899-78db5abf-21ec-4e8a-8107-f67611daf8ff.png">
-
 Tech Used
 This portfolio was built using the following technologies:
 
